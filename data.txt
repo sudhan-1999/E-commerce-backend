@@ -1,0 +1,239 @@
+clothes
+[
+    {
+        "_id": "6732d4edbbbf8447d584fbcf",
+        "name": "Wrap Dress",
+        "description": "Mix up your best look for the next casual get-together by getting this dress from Vero Moda. Team it with Black footwear and a smart clutch to complete your happening attire. It has a casual bell sleeves midi dress with all over floral print. Fit & flare dress.",
+        "price": "Rs 3039",
+        "rating": "3.2",
+        "brand": "Vero Moda",
+        "availability": "In Stock",
+        "reviews": "879",
+        "im": "https://assets.ccbp.in/frontend/react-js/ecommerce/clothes-simple-formal.png"
+    },
+    {
+        "_id": "6732d4edbbbf8447d584fbce",
+        "name": "Embroidered Net Gown",
+        "description": "An Embroidered Net Gown is the clothing worn by a bride during a wedding ceremony. It enhances your beauty wearing this vibrant, gorgeous, and beautiful Wedding Gown. Find your dream wedding dress today. It features foldable, one hoop steel, two layers of tulles, and is elastic in the waist part.",
+        "price": "Rs 62990",
+        "rating": "3.2",
+        "brand": "Manyavar",
+        "availability": "In Stock",
+        "reviews": "879",
+        "im": "https://assets.ccbp.in/frontend/react-js/ecommerce/cloths-long-fork.png"
+    },
+    {
+        "_id": "6732d4edbbbf8447d584fbd3",
+        "name": "Sheer Anarkali",
+        "description": "White Aari embroidered handloom sheer Anarkali kurta with paneled and tie-up detail has a keyhole neck and comes with a white embroidered dupatta. This is designed as per the latest trends to keep you in sync with high fashion, party, casual function, traditional, Garba Parties, etc.",
+        "price": "Rs 2172",
+        "rating": "3.2",
+        "brand": "Saadgi",
+        "availability": "In Stock",
+        "reviews": "879",
+        "im": "https://assets.ccbp.in/frontend/react-js/ecommerce/clothes-white-punjabi.png"
+    },
+    {
+        "_id": "6732d4edbbbf8447d584fbd0",
+        "name": "Warm Up Jacket",
+        "description": "Monte Carlo jackets are perfect for everyday wear and made to keep you warm. This full-zip fleece is jacket has a lot of features 100 cotton fleece zipper lining and cotton-lined sleeve sweaters. Our Monte Carlo jacket is the perfect gift during the holiday season or any special even",
+        "price": "Rs 2796",
+        "rating": "4.4",
+        "brand": "Monte Carlo",
+        "availability": "In Stock",
+        "reviews": "519",
+        "im": "https://assets.ccbp.in/frontend/react-js/ecommerce/clothes-sim-jacket.png"
+    },
+    {
+        "_id": "6732d4edbbbf8447d584fbd2",
+        "name": "Men's Waistcoat",
+        "description": "LEVIS Men's Waistcoat is a 3-button down suit vest perfect for formal or informal occasions such as weddings, banquets, dates, working, parties, etc. It can match with your shirt, jacket, suit, or Tuxedo which makes you handsome and gentlemen. It has an adjustable fit and two side real pockets.",
+        "price": "Rs 2500",
+        "rating": "4.3",
+        "brand": "LEVIS",
+        "availability": "In Stock",
+        "reviews": "130",
+        "im": "https://assets.ccbp.in/frontend/react-js/ecommerce/clothes-jacket.png"
+    },
+    {
+        "_id": "6732d4edbbbf8447d584fbd4",
+        "name": "Cotton Hoodie",
+        "description": "It is made up of rich cotton fabric and this hoodie for men is easy and comfortable to wear throughout the day. It can be machine washed in cold water and suitable for low tumble drying. The pre-shrunk nature of this men’s hoodie ensures no undesirable effects after a wash.",
+        "price": "Rs 498",
+        "rating": "3.8",
+        "brand": "Scott International",
+        "availability": "In Stock",
+        "reviews": "229",
+        "im": "https://assets.ccbp.in/frontend/react-js/ecommerce/clothes-hoodie.png"
+    },
+    {
+        "_id": "6732d4edbbbf8447d584fbd1",
+        "name": "Slim Fit Blazer",
+        "description": "Be the King of subtle yet statement style with this slim-fit blue textured blazer from LEVIS. This slim-fit blazer is made with the perfect blend of polyester and Viscose that makes it comfortable & stylish. Blazer has a single vent at the back with a notched collar crafted with sharp cuts.",
+        "price": "Rs 2599",
+        "rating": "4.2",
+        "brand": "LEVIS",
+        "availability": "Out Of Stock",
+        "reviews": "189",
+        "im": "https://assets.ccbp.in/frontend/react-js/ecommerce/clothes-purple-jacket.png"
+    }
+]
+electronocs
+[
+    {
+        "_id": "6732dc99bbbf8447d590a121",
+        "name": "Neutra Analog Men's Watch",
+        "description": "Fossil Neutra Analog Black Dial Men's Watch has incorporated elements from mid-century architecture that never go out of fashion. This Neutra chronograph watch features a well-balanced construction with a black chronograph dial, white stick markings at all hours, and a sculpted case.",
+        "price": "Rs 10995",
+        "rating": "4.1",
+        "brand": "Fossil",
+        "availability": "In Stock",
+        "reviews": "276",
+        "im": "https://assets.ccbp.in/frontend/react-js/ecommerce/electronics-simple-watch.png"
+    },
+    {
+        "_id": "6732dc99bbbf8447d590a125",
+        "name": "Nova SuperGroom Multi-kit",
+        "description": "This Grooming Kit from Nova can help you achieve grooming goals in the comfort of your home. Suitable for managing hair of the entire body: face, chest, abs, underarms, arms, legs. It provides precision trimming without discomfort like tugging or pulling hairs.",
+        "price": "Rs 1199",
+        "rating": "4.4",
+        "brand": "Nova",
+        "availability": "In Stock",
+        "reviews": "12888",
+        "im": "https://assets.ccbp.in/frontend/react-js/ecommerce/electronics-nover-v2-trimmer.png"
+    },
+    {
+        "_id": "6732dc99bbbf8447d590a11f",
+        "name": "Collider Black Dial Men's Watch",
+        "description": "A classic timepiece designed with integrated mechanical hands and an always-on read-out display shows curated information at a glance. This watch works with both iPhone and Android Phones. It tracks heart rate, activity, and sleep time with in-depth wellness stats. Enjoy battery life that lasts more than two weeks upon complete charge.",
+        "price": "Rs 14995",
+        "rating": "4.3",
+        "brand": "Fossil",
+        "availability": "In Stock",
+        "reviews": "1678",
+        "im": "https://assets.ccbp.in/frontend/react-js/ecommerce/electronics-simple-belt-watch.png"
+    },
+    {
+        "_id": "6732dc99bbbf8447d590a124",
+        "name": "Analog Men's Watch",
+        "description": "Fastrack Casual Analog Dark Blue Dial Men's Watch is a trendy silver watch designed with a blue mesh look on the dial. It has 5ATM/50m water resistance and a stainless steel black cover with high precision quartz analog movement.",
+        "price": "Rs 1850",
+        "rating": "4.2",
+        "brand": "Fastrack",
+        "availability": "In Stock",
+        "reviews": "254304",
+        "im": "https://assets.ccbp.in/frontend/react-js/ecommerce/electronics-casual-watch.png"
+    },
+    {
+        "_id": "6732dc99bbbf8447d590a120",
+        "name": "Maritime Men's Watch",
+        "description": "This analog watch for men features a silver, tonneau dial housed in a brass case. The case is fitted with a crown that lets you adjust the time. The dial has plain three hands, numeral markings at quarter intervals, and a date display. It has Equipped with 3 ATM water-resistant depths.",
+        "price": "Rs 11999",
+        "rating": "4.3",
+        "brand": "Titan",
+        "availability": "In Stock",
+        "reviews": "8652 ",
+        "im": "https://assets.ccbp.in/frontend/react-js/ecommerce/electronics-tatar-watch.png"
+    },
+    {
+        "_id": "6732dc99bbbf8447d590a126",
+        "name": "Beard Trimmer",
+        "description": "Nova Runtime Beard Trimmer is recognized as one of the best taper clippers around. This versatile clipper cuts hair wet or dry, thick or thin, and comes equipped with a blade lever for easy length adjustment, allowing control over the cut closeness.",
+        "price": "Rs 398",
+        "rating": "4.5",
+        "brand": "Nova",
+        "availability": "In Stock",
+        "reviews": "10035",
+        "im": "https://assets.ccbp.in/frontend/react-js/ecommerce/electronics-nova-trimmer.png"
+    },
+    {
+        "_id": "6732dc99bbbf8447d590a122",
+        "name": "Privateer Quartz Watch",
+        "description": "Fossil Men's Privateer Sport Stainless Steel Multifunction Quartz Watch is a trendy addition to your accessory collection. It has a two-tone stainless steel case and bracelet with a fold-over clasp closure and push-button release. The textured dial features gold-tone hands and hour markers.",
+        "price": "Rs 8122",
+        "rating": "4.4",
+        "brand": "Fossil",
+        "availability": "In Stock",
+        "reviews": "16564",
+        "im": "https://assets.ccbp.in/frontend/react-js/ecommerce/electronics-royal-black-watch.png"
+    },
+    {
+        "_id": "6732dc99bbbf8447d590a123",
+        "name": "Chronograph Black Watch",
+        "description": "Stay fashionable with Fossil Chronograph Black Men Watch. This Chronograph watch has a dial with a diameter of 44 millimeters and comes with a 2-year manufacturer warranty. It has everything you need for a best-dressed season, featuring a chronograph movement.",
+        "price": "Rs 6395",
+        "rating": "3.8",
+        "brand": "Fossil",
+        "availability": "In Stock",
+        "reviews": "89765",
+        "im": "https://assets.ccbp.in/frontend/react-js/ecommerce/electronics-royal-watch.png"
+    }
+]toys
+[
+    {
+        "_id": "6732dda5bbbf8447d592574a",
+        "name": "Monsters Charm Toy",
+        "description": "Monsters Charm Toy is a random pack of 5 Mini Generic silicon rubber charm Figures with a pocket-size of 3 cm wide. It has threads to hang as a charm pendant. Perfect for decorating your succulent plants, flower pot, mini garden, etc. Also great as a decoration in your children's room.",
+        "price": "Rs 8600",
+        "rating": "4.2",
+        "brand": "Trendytap",
+        "availability": "In Stock",
+        "reviews": "1243",
+        "im": "https://assets.ccbp.in/frontend/react-js/ecommerce/toys-minnos.png"
+    },
+    {
+        "_id": "6732dda5bbbf8447d592574f",
+        "name": "Bot Robot Toy",
+        "description": "This WireScorts Robot is made of quality material, safe, simple, and easy to use. It is safe for your kids as it is non-toxic. Buy once and enjoy for years. Our Robot Pioneer can move forward and backward, turn left and right. Hands can rotate and feet can move in all directions.",
+        "price": "Rs 355",
+        "rating": "3.8",
+        "brand": "WireScorts",
+        "availability": "In Stock",
+        "reviews": "2345",
+        "im": "https://assets.ccbp.in/frontend/react-js/ecommerce/toys-orange-robot.png"
+    },
+    {
+        "_id": "6732dda5bbbf8447d592574b",
+        "name": "Non-Toxic Robot Toys",
+        "description": "Wooden robot toys are flexible and even can stand up more for more lifetime. It can be served as a perfect gift for both boys and girls. It is made of wooden material, non-toxic, and safe for children to play with. The bright color and cute pattern of the wooden robot will attract children.",
+        "price": "Rs 1545",
+        "rating": "3.3",
+        "brand": "FunBlast",
+        "availability": "In Stock",
+        "reviews": "123412",
+        "im": "https://assets.ccbp.in/frontend/react-js/ecommerce/toys-short-green-robot.png"
+    },
+    {
+        "_id": "6732dda5bbbf8447d592574e",
+        "name": "Knitted Rabbit",
+        "description": "This knitted white fluffy rabbit is easily washable and durable. Best quality fabric is used which is non-toxic and super smooth. This soft toy is home washable and very durable. If someone is asking for soft toys and you are willing to gift soft toys you should prefer this.",
+        "price": "Rs 620",
+        "rating": "4.4",
+        "brand": "Ira",
+        "availability": "In Stock",
+        "reviews": "1234",
+        "im": "https://assets.ccbp.in/frontend/react-js/ecommerce/toys-orange-rabbit.png"
+    },
+    {
+        "_id": "6732dda5bbbf8447d592574d",
+        "name": "Batman Batmobile",
+        "description": "When the batmobile is out of the Batcave, it is a tough time for the bad guys. This heavily armored vehicle is undoubtedly batman's favorite machine in his campaign to fight crime. It comes with a free batman figure with a window packaging missile launcher.",
+        "price": "Rs 745",
+        "rating": "4.7",
+        "brand": "Funskool",
+        "availability": "In Stock",
+        "reviews": "1244",
+        "im": "https://assets.ccbp.in/frontend/react-js/ecommerce/toys-batman-toy.png"
+    },
+    {
+        "_id": "6732dda5bbbf8447d592574c",
+        "name": "Panda Baby Product",
+        "description": "This Ride-on is a brightly colored and visually appealing Ride-on Tricycle. This toddler riding toy can be used indoors or outdoors. It makes learning to ride fun And easy. The wide, long-lasting EVA tires offer a stylish look your child Is Sure To Love. Self Assembly Required.",
+        "price": "Rs 1399",
+        "rating": "4.3",
+        "brand": "Panda",
+        "availability": "In Stock",
+        "reviews": "12434",
+        "im": "https://assets.ccbp.in/frontend/react-js/ecommerce/toys-big-two-wheeler.png"
+    }
+]
