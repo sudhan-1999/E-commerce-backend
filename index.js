@@ -25,11 +25,11 @@ async function connectmongo(){
 }
 export let client = await connectmongo();
 app.use("/",userrouter);//completed
-app.use("/register",userrouter);
-app.use("/login",userrouter);
+app.use("/register",userrouter);//completed
+app.use("/login",userrouter);//completed
 app.use("/cart",userrouter);
-app.use("/clothes",userrouter);
-app.use("/electronics",userrouter);
+app.use("/clothes",userrouter);//completed
+app.use("/electronics",userrouter);//completed
 app.use("/appliances",userrouter);
 app.use("/toys",userrouter);
 
