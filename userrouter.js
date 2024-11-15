@@ -1,5 +1,5 @@
 import express from 'express';
-import {  checkuser, getclothes, getelectronics, products, register } from './mongo.js';
+import {  appliances, checkuser, getclothes, getelectronics, products, register, toys } from './mongo.js';
 import {  comparepass, hashassingword } from './helper.js';
 
 
@@ -74,6 +74,23 @@ router.get("/electronics",async(req,res)=>{
         res.status(200).json(electronics);
     }catch(err){
         res.status(500).json(err);
+    }
+})
+router.get("/appliances",async(req,res)=>{
+    try{
+        const appliance=await appliances();
+        res.status(200).json(appliance);
+    }catch(err){
+        res.status(500).json(err);
+    }
+})
+router.get("toys",async(req,res)=>{
+    try{
+        const toy=await toys();
+        console.log(toy);
+        res.status(200).json(toy);
+    }catch(err){
+        res.status(500).json(err)
     }
 })
 

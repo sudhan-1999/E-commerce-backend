@@ -30,7 +30,7 @@ app.use("/login",userrouter);//completed
 app.use("/cart",userrouter);
 app.use("/clothes",userrouter);//completed
 app.use("/electronics",userrouter);//completed
-app.use("/appliances",userrouter);
+app.use("/appliances",userrouter);//completed
 app.use("/toys",userrouter);
 
 app.listen(port,()=>{console.log("server started at the port",port)})

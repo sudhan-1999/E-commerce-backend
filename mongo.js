@@ -27,8 +27,34 @@ export async function checkuser(Email){
     }
 }
 export async function getclothes(){
-    return await client.db("E-commerce").collection("clothes").find().toArray();
+    try{
+        return await client.db("E-commerce").collection("clothes").find().toArray();
+    }catch(err){
+        return err;
+    }
+    
 }
 export async function getelectronics(){
-    return await client.db("E-commerce").collection("electronics").find().toArray();
+    try{
+        return await client.db("E-commerce").collection("electronics").find().toArray();
+    }catch(err){
+        return err;
+    }
+    
+}
+export async function appliances(){
+    try{
+        return await client.db("E-commerce").collection("appliances").find().toArray();
+    }catch(err){
+        return err;
+    }
+    
+}
+export async function toys(){
+    try{
+        return await client.db("E-commerce").collection("toys").find().toArray();
+    }catch(err){
+        return err;
+    }
+    
 }
