@@ -10,3 +10,20 @@
    const comparing= await bcrypt.compare(Password,user.Password);
    return comparing;
  }
+ export async function generatestring(string){
+  try{
+    const salting=await bcrypt.genSalt(10);
+    const hash=await bcrypt.hash(string,salting);
+    return hash;
+  }catch(err){
+    return err;
+  }
+ }
+ export async function compringcode(findemail,code){
+  try{
+    const comparing= await bcrypt.compare(code,findemail.TempData);
+    return comparing;
+  }catch(err){
+    return err;
+  }
+ }

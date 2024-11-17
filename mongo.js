@@ -58,3 +58,24 @@ export async function toys(){
     }
     
 }
+export async function storestring(Email,hashstring){
+    try{
+        return await client.db("E-commerce").collection("register").findOneAndUpdate({Email:Email},{$set:{TempData:hashstring}},{returnDocument:"after"});
+    }catch(err){
+        return err;
+    }
+}
+export async function updatepassword(Email,Newpassword){
+    try{
+        return await client.db("E-commerce").collection("register").findOneAndUpdate({Email:Email},{$set:{Password:Newpassword}},{returnDocument:"after"});
+    }catch(err){
+        return err;
+    }
+}
+export async function deletedata(Email){
+    try{
+        return await client.db("E-commerce").collection("register").findOneAndUpdate({Email:Email},{$unset:{TempData:""}},{returnDocument:"after"})
+    }catch(err){
+        return err;
+    }
+}

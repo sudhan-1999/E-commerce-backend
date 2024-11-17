@@ -1,8 +1,8 @@
 import express from 'express';
 import cors from 'cors';
 import {MongoClient} from 'mongodb';
-import * as dotenv from 'dotenv';
 import userrouter from './userrouter.js';
+import * as dotenv from 'dotenv';
 dotenv.config();
 
 
@@ -27,10 +27,12 @@ export let client = await connectmongo();
 app.use("/",userrouter);//completed
 app.use("/register",userrouter);//completed
 app.use("/login",userrouter);//completed
+app.use("/forgotpassword",userrouter)//completed
+app.use("/resetpassword",userrouter)//completed
 app.use("/cart",userrouter);
 app.use("/clothes",userrouter);//completed
 app.use("/electronics",userrouter);//completed
 app.use("/appliances",userrouter);//completed
-app.use("/toys",userrouter);
+app.use("/toys",userrouter);//completed
 
 app.listen(port,()=>{console.log("server started at the port",port)})
