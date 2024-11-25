@@ -161,6 +161,21 @@ router.post("/resetpassword",async (req,res)=>{
         res.status(500).send(`Error occured:${err}`);
     }
 })
+router.get("/:category/:id",async(req,res)=>{
+  try{
+  const{category,id}=req.params;
+  console.log(id);
+  console.log(category);
+  const prd=await findproduct(category,id);
+  if (!prd) {
+    return res.status(404).json({ error: "Product not found in the specified category" });
+  }
+  console.log(prd);
+  res.status(200).json(prd)
+}catch(err){
+  res.status(500).json(`Error occured:${err}`)
+}
+})
 
 const userrouter = router;
 export default userrouter;

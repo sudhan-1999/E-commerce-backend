@@ -1,4 +1,5 @@
 import { client } from "./index.js";
+import { ObjectId } from "bson";
 
 
 export async function products(){
@@ -75,6 +76,18 @@ export async function updatepassword(Email,Newpassword){
 export async function deletedata(Email){
     try{
         return await client.db("E-commerce").collection("register").findOneAndUpdate({Email:Email},{$unset:{TempData:""}},{returnDocument:"after"})
+    }catch(err){
+        return err;
+    }
+}
+export async function findproduct(category,id) {
+    try{
+        const objectId = ObjectId.isValid(id) ? new ObjectId(id) : null;
+        console.log(objectId)
+        if (!objectId) {
+            throw new Error("Invalid ID format");
+          }
+        return await client.db("E-commerce").collection(`${category}`).findOne({_id:objectId});
     }catch(err){
         return err;
     }
