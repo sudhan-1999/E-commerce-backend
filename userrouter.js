@@ -1,8 +1,12 @@
 import express from "express";
 import {
+  addingtocart,
   appliances,
+  cartproduct,
   checkuser,
   deletedata,
+  findprd,
+  findproduct,
   getclothes,
   getelectronics,
   products,
@@ -48,7 +52,6 @@ router.post("/login", async (req, res) => {
   const { Email, Password } = req.body;
   try {
     const user = await checkuser(Email);
-    console.log(user);
     if (!user) {
       return res.status(401).json({
         success: false,
@@ -145,7 +148,6 @@ router.post("/forgotpassword", async (req, res) => {
 });
 router.post("/resetpassword",async (req,res)=>{
     const {Email,code,password}=req.body;
-    console.log(Email,code,password);
     try{
         const findemail=await checkuser(Email);
        const compare= await compringcode(findemail,code);
@@ -153,7 +155,6 @@ router.post("/resetpassword",async (req,res)=>{
         const Newpassword=await hashassingword(password);
         const update=await updatepassword(Email,Newpassword);
         await deletedata(Email);
-        console.log(update);
         res.status(200).json({sucees:"true",
             message:"updated successfully"})
        }
@@ -164,17 +165,35 @@ router.post("/resetpassword",async (req,res)=>{
 router.get("/:category/:id",async(req,res)=>{
   try{
   const{category,id}=req.params;
-  console.log(id);
-  console.log(category);
   const prd=await findproduct(category,id);
   if (!prd) {
     return res.status(404).json({ error: "Product not found in the specified category" });
   }
-  console.log(prd);
   res.status(200).json(prd)
 }catch(err){
-  res.status(500).json(`Error occured:${err}`)
+  res.status(500).json({error:`Error occured:${err}`})
 }
+})
+router.post("/cart/:category/:id",async(req,res)=>{
+  try{ const {category,id}=req.params;
+   const prd=await findprd(category,id);
+   if (!prd) {
+    return res.status(404).json({ error: "Product not found in the specified category" });
+  }
+   await addingtocart(prd);
+   res.status(200).send({ message: "Added to cart successfully" });
+  }catch(err){
+    res.status(500).send({ error: "Failed to add to cart" });
+  }
+ 
+})
+router.get("/cart",async(req,res)=>{
+  try{
+    const product=await cartproduct();
+    res.status(200).send(product);
+  }catch(err){
+    res.status(500).send({"messag":err});
+  }
 })
 
 const userrouter = router;
