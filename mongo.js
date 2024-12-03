@@ -10,7 +10,6 @@ export async function products(){
     }
 }
 
-//E-commerce register toys login exclusive electronics clothes cart appliances
 export async function register(newdata){
     try{
         return await client.db("E-commerce").collection("register").insertOne({Name:newdata.Name,Email:newdata.Email,Password:newdata.hasedpass})
@@ -86,14 +85,13 @@ export async function findproduct(category, id) {
         throw new Error("Invalid ID format");
       }
   
-      // Query the database
       return await client
         .db("E-commerce")
         .collection(category)
         .findOne({ _id: objectid });
     } catch (err) {
       console.error("Error in findproduct:", err);
-      throw err; // Re-throw the error to handle it in the calling function
+      throw err; 
     }
   }
   export async function findprd(category,id){
@@ -120,4 +118,14 @@ export async function findproduct(category, id) {
     }catch(err){
         return err;
     }
+  }
+  export async function removefromcart(id){
+    try{
+        if (!ObjectId.isValid(id)) {
+            throw new Error("Invalid ID format");
+          }
+          const objectid =  ObjectId.createFromHexString(id);
+        return await client.db("E-commerce").collection("cart").deleteOne({_id:objectid})
+    }catch(err){
+        return err;    }
   }

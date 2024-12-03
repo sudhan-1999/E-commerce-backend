@@ -11,6 +11,7 @@ import {
   getelectronics,
   products,
   register,
+  removefromcart,
   storestring,
   toys,
   updatepassword,
@@ -44,7 +45,6 @@ router.post("/register", async (req, res) => {
       return res.status(409).send("Usr already exist");
     }
   } catch (err) {
-    console.error(err);
     res.status(500).send("Error occured");
   }
 });
@@ -102,7 +102,6 @@ router.get("/appliances", async (req, res) => {
 router.get("/toys", async (req, res) => {
   try {
     const toy = await toys();
-    console.log(toy);
     res.status(200).json(toy);
   } catch (err) {
     res.status(500).json(err);
@@ -142,7 +141,6 @@ router.post("/forgotpassword", async (req, res) => {
       });
     }
   } catch (err) {
-    console.log(err);
     res.status(500).json(err.message);
   }
 });
@@ -153,7 +151,7 @@ router.post("/resetpassword",async (req,res)=>{
        const compare= await compringcode(findemail,code);
        if(compare){
         const Newpassword=await hashassingword(password);
-        const update=await updatepassword(Email,Newpassword);
+        await updatepassword(Email,Newpassword);
         await deletedata(Email);
         res.status(200).json({sucees:"true",
             message:"updated successfully"})
@@ -193,6 +191,19 @@ router.get("/cart",async(req,res)=>{
     res.status(200).send(product);
   }catch(err){
     res.status(500).send({"messag":err});
+  }
+})
+router.delete("/cart/:id",async(req,res)=>{
+  try{
+    const {id}=req.params;
+    const cartproduct=await removefromcart(id)
+    if (cartproduct.deletedCount === 1) {
+      res.status(200).send({ message: "Product removed from cart" });
+    } else {
+      res.status(404).send({ message: "Product not found in cart" });
+  }
+  }catch(err){
+    res.status(500).send({"message":err})
   }
 })
 

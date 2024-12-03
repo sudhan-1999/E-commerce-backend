@@ -34,5 +34,10 @@ app.use("/clothes",userrouter);//completed
 app.use("/electronics",userrouter);//completed
 app.use("/appliances",userrouter);//completed
 app.use("/toys",userrouter);//completed
+app.use("/:category/:id",userrouter)
+app.use("/cart/:category/:id",userrouter)
+app.use("/cart/:id",userrouter)
+
+
 
 app.listen(port,()=>{console.log("server started at the port",port)})
