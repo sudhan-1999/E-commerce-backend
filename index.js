@@ -30,10 +30,10 @@ app.use("/login",userrouter);//completed
 app.use("/forgotpassword",userrouter)//completed
 app.use("/resetpassword",userrouter)//completed
 app.use("/cart",userrouter);
-app.use("/clothes",userrouter);//completed
-app.use("/electronics",userrouter);//completed
-app.use("/appliances",userrouter);//completed
-app.use("/toys",userrouter);//completed
+//app.use("/clothes",userrouter);//completed
+//app.use("/electronics",userrouter);//completed
+//app.use("/appliances",userrouter);//completed
+app.use("/:category",userrouter);
 app.use("/:category/:id",userrouter)
 app.use("/cart/:category/:id",userrouter)
 app.use("/cart/:id",userrouter)

@@ -1,20 +1,21 @@
 import express from "express";
 import {
   addingtocart,
-  appliances,
   cartproduct,
   checkuser,
+  datas,
   deletedata,
   findprd,
   findproduct,
-  getclothes,
-  getelectronics,
   products,
   register,
   removefromcart,
   storestring,
-  toys,
   updatepassword,
+  appliances,
+  getclothes,
+  getelectronics,
+  toys
 } from "./mongo.js";
 import { comparepass, compringcode, generatestring, hashassingword } from "./helper.js";
 import crypto from "crypto";
@@ -75,38 +76,6 @@ router.post("/login", async (req, res) => {
     res.status(500).send("Error occured");
   }
 });
-router.get("/clothes", async (req, res) => {
-  try {
-    const cloth = await getclothes();
-    res.status(200).json(cloth);
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
-router.get("/electronics", async (req, res) => {
-  try {
-    const electronics = await getelectronics();
-    res.status(200).json(electronics);
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
-router.get("/appliances", async (req, res) => {
-  try {
-    const appliance = await appliances();
-    res.status(200).json(appliance);
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
-router.get("/toys", async (req, res) => {
-  try {
-    const toy = await toys();
-    res.status(200).json(toy);
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
 router.post("/forgotpassword", async (req, res) => {
   try {
     const Email = req.body.Email;
@@ -160,6 +129,47 @@ router.post("/resetpassword",async (req,res)=>{
         res.status(500).send(`Error occured:${err}`);
     }
 })
+
+/*router.get("/clothes", async (req, res) => {
+  try {
+    const cloth = await getclothes();
+    res.status(200).json(cloth);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+router.get("/electronics", async (req, res) => {
+  try {
+    const electronics = await getelectronics();
+    res.status(200).json(electronics);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+router.get("/appliances", async (req, res) => {
+  try {
+    const appliance = await appliances();
+    res.status(200).json(appliance);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});*/
+/*router.get("/:category", async (req, res) => {
+  try {
+    const{category}=req.params;
+    const data = await datas(category);
+    res.status(200).json(data);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});*/
+router.get("/", async (req, res) => {
+  const category = req.baseUrl.slice(1); // Extract category name
+  const data = await datas(category);
+  res.status(200).json(data);
+});
+
+
 router.get("/:category/:id",async(req,res)=>{
   try{
   const{category,id}=req.params;

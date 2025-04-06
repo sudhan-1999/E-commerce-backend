@@ -25,33 +25,10 @@ export async function checkuser(Email){
         return err;
     }
 }
-export async function getclothes(){
+
+export async function datas(category){
     try{
-        return await client.db("E-commerce").collection("clothes").find().toArray();
-    }catch(err){
-        return err;
-    }
-    
-}
-export async function getelectronics(){
-    try{
-        return await client.db("E-commerce").collection("electronics").find().toArray();
-    }catch(err){
-        return err;
-    }
-    
-}
-export async function appliances(){
-    try{
-        return await client.db("E-commerce").collection("appliances").find().toArray();
-    }catch(err){
-        return err;
-    }
-    
-}
-export async function toys(){
-    try{
-        return await client.db("E-commerce").collection("toys").find().toArray();
+        return await client.db("E-commerce").collection(`${category}`).find().toArray();
     }catch(err){
         return err;
     }
@@ -129,3 +106,28 @@ export async function findproduct(category, id) {
     }catch(err){
         return err;    }
   }
+
+  /*export async function getclothes(){
+    try{
+        return await client.db("E-commerce").collection("clothes").find().toArray();
+    }catch(err){
+        return err;
+    }
+    
+}
+export async function getelectronics(){
+    try{
+        return await client.db("E-commerce").collection("electronics").find().toArray();
+    }catch(err){
+        return err;
+    }
+    
+}
+export async function appliances(){
+    try{
+        return await client.db("E-commerce").collection("appliances").find().toArray();
+    }catch(err){
+        return err;
+    }
+    
+}*/
