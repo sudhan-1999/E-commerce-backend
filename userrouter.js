@@ -12,10 +12,7 @@ import {
   removefromcart,
   storestring,
   updatepassword,
-  appliances,
-  getclothes,
-  getelectronics,
-  toys
+  
 } from "./mongo.js";
 import { comparepass, compringcode, generatestring, hashassingword } from "./helper.js";
 import crypto from "crypto";
@@ -24,7 +21,10 @@ import * as dotenv from "dotenv";
 dotenv.config();
 
 const router = express.Router();
-
+/*appliances,
+  getclothes,
+  getelectronics,
+  toys */
 router.get("/", async (req, res) => {
   const data = await products();
   res.send(data);
