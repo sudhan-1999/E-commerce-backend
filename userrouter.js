@@ -154,20 +154,17 @@ router.get("/appliances", async (req, res) => {
     res.status(500).json(err);
   }
 });*/
-/*router.get("/:category", async (req, res) => {
+
+router.get("/:category", async (req, res) => {
   try {
-    const{category}=req.params;
+    const { category } = req.params;
     const data = await datas(category);
     res.status(200).json(data);
   } catch (err) {
     res.status(500).json(err);
   }
-});*/
-router.get("/", async (req, res) => {
-  const category = req.baseUrl.slice(1); // Extract category name
-  const data = await datas(category);
-  res.status(200).json(data);
 });
+
 
 
 router.get("/:category/:id",async(req,res)=>{
